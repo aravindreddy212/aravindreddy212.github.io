@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aravind Reddy Puchakayala | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body { background: linear-gradient(135deg, #0f172a, #1e293b); color: white; }
+    .container { max-width: 1000px; margin: auto; padding: 20px; }
+    header { text-align: center; padding: 40px 0; }
+    h1 { font-size: 3rem; background: linear-gradient(90deg, #60a5fa, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    p.tagline { font-size: 1.2rem; color: #94a3b8; margin-top: 10px; }
+    nav { text-align: center; margin-top: 20px; }
+    nav a { color: #94a3b8; margin: 0 15px; font-weight: bold; text-decoration: none; transition: color 0.3s; }
+    nav a:hover { color: #60a5fa; }
+    section { padding: 40px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    h2 { font-size: 2rem; margin-bottom: 20px; color: #60a5fa; }
+    ul { list-style: none; padding-left: 20px; }
+    li { margin-bottom: 10px; }
+    a.btn { display: inline-block; padding: 10px 20px; background: #2563eb; color: white; border-radius: 5px; text-decoration: none; margin-top: 10px; transition: background 0.3s; }
+    a.btn:hover { background: #1e40af; }
+    .contact input, .contact textarea {
+      width: 100%; padding: 12px; margin: 8px 0;
+      border: none; border-radius: 5px; outline: none;
+    }
+    .contact button {
+      background: #2563eb; color: white;
+      padding: 10px 20px; border: none; border-radius: 5px;
+      cursor: pointer; font-size: 1rem;
+    }
+    .contact button:hover { background: #1e40af; }
+    footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #94a3b8; }
+
+    .social-links { margin-top: 20px; }
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: #94a3b8;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+    .social-links a:hover {
+      transform: scale(1.2);
+      color: #60a5fa;
+    }
+
+    [data-animate] { opacity: 0; transform: translateY(30px); transition: all 0.6s ease; }
+    [data-animate].visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header data-animate>
+      <h1>Aravind Reddy Puchakayala</h1>
+      <p class="tagline">
+        Fresher | Computer Science Undergraduate | Aspiring Software Developer
+      </p>
+
+      <nav>
+        <a href="#objective">Objective</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#internships">Internships</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="social-links">
+        <a href="tel:+919502128915" title="Call"><i class="fas fa-phone"></i></a>
+        <a href="mailto:aravindreddy2448@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/aravind-reddy-5717a132a" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="Resume.pdf" download title="Download Resume">
+          <i class="fas fa-file-download"></i>
+        </a>
+      </div>
+    </header>
+
+    <section id="objective" data-animate>
+      <h2>Career Objective</h2>
+      <p>
+        To obtain a software development position where I can apply my programming
+        skills and problem-solving abilities to build innovative and efficient
+        solutions that contribute to organizational goals.
+      </p>
+    </section>
+
+    <section id="skills" data-animate>
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Programming Languages:</strong> Java, Python, C</li>
+        <li><strong>Web Technologies:</strong> HTML, CSS</li>
+        <li><strong>Database:</strong> SQL</li>
+        <li><strong>Soft Skills:</strong> Problem Solving, Team Work, Fast Learner</li>
+        <li><strong>Languages:</strong> English, Hindi, Telugu</li>
+      </ul>
+    </section>
+
+    <section id="education" data-animate>
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>B.Tech in Computer Science & Engineering</strong><br>
+          Santhiram Engineering College, Andhra Pradesh<br>
+          Expected Graduation: 2026 | Percentage: 70%
+        </li>
+        <li>
+          <strong>Intermediate</strong><br>
+          Theresa Junior College, Atmakur (2022) | Percentage: 58%
+        </li>
+        <li>
+          <strong>Secondary School</strong><br>
+          Sree Lakshmi E.M School, Nandyal (2020) | Percentage: 92%
+        </li>
+      </ul>
+    </section>
+
+    <section id="internships" data-animate>
+      <h2>Internships & Certifications</h2>
+      <ul>
+        <li>Java Full Stack Certification – AICTE</li>
+        <li>Hands-on experience with OOP concepts and Java Full Stack development</li>
+        <li>Participated in Coding Gala and college-level coding competitions</li>
+      </ul>
+    </section>
+
+    <section id="contact" data-animate>
+      <h2>Contact Me</h2>
+      <form class="contact" onsubmit="alert('Message sent successfully!'); return false;">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      &copy; <span id="year"></span> Aravind Reddy Puchakayala. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const elements = document.querySelectorAll('[data-animate]');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
